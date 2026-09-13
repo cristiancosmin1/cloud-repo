@@ -48,3 +48,13 @@ output "cluster_endpoint" {
 output "external_secrets_role_arn" {
   value = aws_iam_role.external_secrets.arn
 }
+
+output "route53_name_servers" {
+  description = "Route 53 name servers to configure at the domain registrar"
+  value       = aws_route53_zone.main.name_servers
+}
+
+output "route53_zone_id" {
+  description = "Route 53 public hosted zone ID"
+  value       = aws_route53_zone.main.zone_id
+}
