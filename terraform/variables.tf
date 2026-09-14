@@ -37,18 +37,3 @@ variable "max_size" {
   description = "Maximum number of worker nodes"
   type        = number
 }
-
-variable "domain_name" {
-  description = "Public domain name used by the platform"
-  type        = string
-}
-
-variable "ingress_lb_dns_name" {
-  description = "DNS name of the Kubernetes ingress Load Balancer"
-  type        = string
-}
-
-variable "ingress_lb_zone_id" {
-  description = "Canonical hosted zone ID of the ingress Load Balancer"
-  type        = string
-}
